@@ -20,11 +20,11 @@ def test_gcd_prime_numbers(input_test, expected):
 
 @pytest.mark.skip(reason="Not implemented")
 def test_gcd_exception_by_zero():
-    assert gcd(0, 0) is 0
-    assert gcd_recursion(0, 0) is 0
+    assert gcd(0, 0) == 0
+    assert gcd_recursion(0, 0) == 0
 
 
 @pytest.mark.xfail
 def test_gcd_zero():
-    assert gcd(0, 0) is 0
-    assert gcd_recursion(0, 0) is 0
+    assert gcd(0, 0) == 0
+    assert gcd_recursion(0, 0) == 0
